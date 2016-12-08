@@ -1,7 +1,6 @@
-<h1>Sign Up!</h1>
 
 
-<form action="/users" method="post">
+<form action=" <%= action %>" method="<%= method %>">
 
   <label for="username">Username</label>
   <input id="username" type="text" name="user[username]">
@@ -9,11 +8,9 @@
   <label for="password">Enter Password</label>
   <input id="password" type="text" name="user[password]">
 
-  <input type="submit" value="Enter">
+  <input type="submit" name="submit" value="Enter">
 
   <%= flash[:messages] %>
 
 
 </form>
-
-  <!-- <%#=  render partial: "shared", action: '/users', method:'post', user: @user %> -->
